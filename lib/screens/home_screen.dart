@@ -11,7 +11,6 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('La Casa Screen'),
           elevation: 0,
-          //backgroundColor: Colors.green,
         ),
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
@@ -22,8 +21,6 @@ class HomeScreen extends StatelessWidget {
                   title: Text(AppRoutes.menuOptions[index].name),
                   trailing: const Icon(Icons.arrow_forward_ios_sharp, color: AppTheme.primary,),
                   onTap: () {
-                    //final route = MaterialPageRoute(builder: (context) => const CardScreen());
-                    //Navigator.push(context, route);
                     Navigator.pushNamed(
                         context, AppRoutes.menuOptions[index].route);
                   },
