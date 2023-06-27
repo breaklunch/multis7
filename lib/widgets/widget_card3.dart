@@ -12,7 +12,6 @@ class WidgetCard3 extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       elevation: 10,
-      // shadowColor: AppTheme.primary,
       child: Column(
         children: [
             const ListTile(
